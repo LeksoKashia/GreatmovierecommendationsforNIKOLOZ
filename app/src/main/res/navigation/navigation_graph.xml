@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFrag">
+
+    <fragment
+        android:id="@+id/dashboardFrag"
+        tools:layout="@layout/frag_dashboard"
+        android:name="com.example.myapplication.fragments.DashboardFrag"
+        android:label="DashboardFrag" >
+        <argument
+            android:name="amount"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFrag"
+        tools:layout="@layout/fragment_home"
+        android:name="com.example.myapplication.fragments.homeFrag"
+        android:label="homeFrag" >
+        <action
+            android:id="@+id/action_homeFrag_to_dashboardFrag"
+            app:destination="@id/dashboardFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFrag"
+        tools:layout="@layout/frag_notification"
+        android:name="com.example.myapplication.fragments.NotificationFrag"
+        android:label="NotificationFrag" />
+    <fragment
+        android:id="@+id/great_movie_image"
+        tools:layout="@layout/improvised_frag"
+        android:name="com.example.myapplication.fragments.ImprovisationFrag"
+        android:label="improvisationFrag" />
+</navigation>

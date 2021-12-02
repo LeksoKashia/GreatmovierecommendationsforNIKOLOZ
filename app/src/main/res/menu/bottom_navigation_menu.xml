@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeFrag"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item android:id="@+id/dashboardFrag"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Dashboard"/>
+    <item android:id="@+id/notificationFrag"
+    android:icon="@drawable/ic_baseline_notifications_none_24"
+    android:title="Notification"/>
+    <item android:id="@+id/great_movie_image"
+    android:icon="@drawable/ic_baseline_architecture_24"
+    android:title="Movie"/>
+
+
+
+
+</menu>
